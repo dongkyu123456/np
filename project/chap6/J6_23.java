@@ -1,10 +1,11 @@
 package project.chap6;
 
 //p185 기본형 매개변수 예제
-    
+
 class Data {
     int x;
 }
+
 public class J6_23 {
     public static void main(String[] args) {
         Data d = new Data();
@@ -20,4 +21,3 @@ public class J6_23 {
         System.out.println(+x);
     }
 }
-

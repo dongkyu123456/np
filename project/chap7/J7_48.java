@@ -14,7 +14,7 @@ class Outer {
     static class StaticInner {
         int siv = outerCv;
         // 스태틱 클래스는 외부 클래스의 인스턴스 멤버에 접근할 수 없다.
-//      int siv = outerIv;
+        // int siv = outerIv;
         static int scv = outerCv;
     }
 
@@ -26,8 +26,8 @@ class Outer {
             int liv = outerIv;
             int liv2 = outerCv;
             // 외부 클래스의 지역변수는 final이 붙은 변수(상수)만 접근 가능하다.
-//          int liv3 = lv;      // 에러. final이 붙지 않은 지역변수는 상수가 아니다.
-            int liv4 = LV;      // OK. 상수는 접근 가능하다.
+            // int liv3 = lv; // 에러. final이 붙지 않은 지역변수는 상수가 아니다.
+            int liv4 = LV; // OK. 상수는 접근 가능하다.
         }
     }
 

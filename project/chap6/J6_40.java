@@ -18,8 +18,10 @@ class J6_40 {
             public static void main(String[] args) { 
             System.out.println("J6_40 bt = new J6_40(); "); 
             J6_40 bt = new J6_40();
+            System.out.println("bt : "+bt);
 
             System.out.println("J6_40 bt2 = new J6_40(); "); 
             J6_40 bt2 = new J6_40();
+            System.out.println("bt2 : "+bt2);
             }
         }

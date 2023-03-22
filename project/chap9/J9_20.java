@@ -9,6 +9,7 @@ public class J9_20 {
         System.out.println(sb); // 0123456 -> 의미하는 바는? 메서드 4개를 합쳤다.
         System.out.println(sb2); // 0123456 -> ?? 얜 왜 123456인가
         //sb.append(23)값을 줬다 -> 그럼 0123이 아닌가?
+        //sb.append의 변화에 따라 sb2, sb3는 실시간으로 변화한다
         StringBuffer sb3 = sb.append(78);
         System.out.println(sb3);
         sb3.append(9.0);

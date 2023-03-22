@@ -1,3 +1,24 @@
 Join과 StringJoiner의 차이? p 337
+    Join과 StringJoiner 모두 문자열을 결합하는 기능을 제공하지만, 
+    Join은 정적 메서드이며 구분자만 지정할 수 있으며, 
+    StringJoiner는 인스턴스를 생성하여 구분자와 접두사, 접미사를 설정할 수 있습니다.
+
 스트링 버퍼 클래스의 이퀄 메서드와 일반 이퀄 메서드의 차이점은 무엇인가? p343
-J9_20 참조 p346
+    StringBuffer 클래스는 equals() 메서드를 오버라이딩하지 않아서, 상위 클래스인 
+    Object 클래스에서 상속받은 equals() 메서드를 사용합니다. 
+    이 때 Object 클래스의 equals() 메서드는 객체의 참조 값(identity)을 비교하기 때문에, 
+    StringBuffer 클래스의 equals() 메서드는 두 개의 StringBuffer 객체가 동일한 객체인지 여부만을 판단합니다. 
+    즉, 두 개의 StringBuffer 객체가 내용은 동일하지만 서로 다른 객체일 경우에도 equals() 메서드는 false를 반환합니다.
+    반면에, 일반적인 클래스에서 equals() 메서드를 오버라이딩하면 객체의 내용을 비교하여 
+    두 개의 객체가 동일한 내용을 가지면 true를 반환하도록 할 수 있습니다. 
+
+    따라서, 일반적인 클래스에서 equals() 메서드를 사용하여 두 개의 객체가 동일한 내용을 가지는지를 판단할 수 있지만, 
+    StringBuffer 클래스에서는 equals() 메서드를 사용하여 동일한 내용을 가지는 두 개의 객체를 비교할 수 없습니다.
+
+    따라서, StringBuffer 클래스에서는 내용을 비교하기 위해서는 
+    toString() 메서드를 사용하여 문자열로 변환한 후에 equals() 메서드를 사용해야 합니다. 
+    예를 들어, StringBuffer sb1 = new StringBuffer("Hello"); StringBuffer sb2 = new StringBuffer("Hello");일 때, 
+    sb1.toString().equals(sb2.toString())와 같이 사용하여 두 개의 StringBuffer 객체의 내용이 동일한지를 비교할 수 있습니다.
+
+어레이 리스트의 제네릭스 유무의 차이? p396
+람다식이 의미하는 것? p418

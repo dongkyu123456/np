@@ -1,4 +1,4 @@
-package project.chap6.test;
+// package project.chap6.test;
 //p207
-public class T0_0 {
-}
+// public class T0_0 {
+// }

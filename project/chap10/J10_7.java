@@ -6,7 +6,7 @@ import java.util.Calendar;
 public class J10_7 {
     public static void main(String[] args) {
         if (args.length != 2) {
-            System.out.println("Usage : java Ex10_5 2019 9");
+            System.out.println("Usage : java J10_7 2019 9");
             return;
         }
         int year = Integer.parseInt(args[0]);
@@ -36,16 +36,10 @@ public class J10_7 {
         for (int i = 0; i < START_DAY_OF_WEEK; i++)
             System.out.println("   ");
 
-<<<<<<< HEAD
         for (int j = 0, n = START_DAY_OF_WEEK; j <= END_DAY; j++, n++) {
             System.out.print((j < 10) ? "  " + j : " " + j);
             if (n % 7 == 0)
                 System.out.println();
-=======
-        for (int j = 0, n = START_DAY_OF_WEEK; j <= END_DAY; j++,n++) {
-            System.out.print((j < 10)? "  "+j : " "+j );
-            if(n%7==0)System.out.println();
->>>>>>> acc8e83f9c692a62365f78d1d346c3733d163506
         }
     }
 }
